@@ -9,25 +9,46 @@
 
 
 	<style>
-		h1{
-			font-family: "PT Mono";
-		}
+		
 		body{
+			min-width: 200px;
 			font-size: 20px;
 			font-family: "Underdog";
 			background: #FFFEEF;
 		}
+
+		h1{
+			font-family: "PT Mono";
+		}
+
 		p{
 			/*margin-bottom: 0.1em;*/
 		}
+		
+		#portrate{
+			max-width: 400px;
+			max-height: 400px;
+			min-width: 250px;
+			min-height: 250px;
+			width: 100%;
+		}
+
+		.image-container{
+			max-width: 34em;
+			width: 80%;
+			margin: 0 auto;
+		}
+		
 		.container{
 			max-width: 34em;
 			width: 51.5%;
 			margin: 2em auto;
 		}
+
 		.question{
 			font-weight: bold;
 		}
+
 		.name{
 			position: relative;
 			font-variant: small-caps;
@@ -38,6 +59,9 @@
 <body>
 <div class="container">
 <h1>Trokl-Observer: Interview</h1>
+<div class="image-container">
+	<img id="portrate" src="./ivan-photo.jpg">
+</div>
 <p class="question"><span class="name">Stan: </span>Дайте пожалуйста мини-интервью для Trokl-Observer.</p>
 	
 	<p><span class="name"> Ivan: </span> Спрашивайте.</p>
