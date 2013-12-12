@@ -46,14 +46,18 @@
 			font-variant: small-caps;
 			margin-left: -2em; 
 		}
-		@media (max-width: 700px), handheld{
+		@media (max-width: 700px){
 			body{
 				font-size: 24px;
 			}
 
 			.container{
 				width: 100%;
-				margin: 2em 2em auto 2.4em;
+				padding: 0 0 2em 2em;
+				box-model : content-box;
+				-ms-box-sizing: content-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
 			}
 		}
 	</style>
